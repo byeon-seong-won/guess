@@ -1,0 +1,31 @@
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --gray_01: #666666;
+    --gray_02: #9a9a9a;
+    --gray_03: #bdbdbd;
+    --gray_04: #eeeeee;
+    --gray_05: #f5f5f5;
+    --gray_06: #f9f9f9;
+    --guess-red: #ed1b2c;
+    --guess-red-dk: #dc3545;
+    --guess-blue: #183beb;
+    --guess-green: #018002;
+    --guess-gray-dk: #71767f;
+}
+
+
+* {margin:0;padding:0;font:inherit;color:inherit;}
+*, :after, :before {box-sizing:border-box;}
+html, body {height:100%;}
+img, picture, video, canvas, svg {display: block;max-width:100%;}
+button {background:none;border:0;cursor:pointer;}
+a {text-decoration:none}
+table {border-collapse:collapse;border-spacing:0}
+ul {list-style: none;}
+fieldset, input {border: 0;}
+html {scroll-behavior: smooth;}
+body {
+    font-family: 'FuturaStd', 'pretendard', sans-serif;
+    color: #353535;
+}

@@ -1,0 +1,71 @@
+
+
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+}
+#wrapper {
+    min-width: 1400px;
+    overflow: hidden;
+    /* padding-top: 92px; */
+    /* padding-top: 56px; */
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+.inner {
+    max-width: 1680px;
+    margin: 0 auto 160px;
+}
+#top_btn {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity .3s;
+}
+#top_btn a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#top_btn .quick {
+    margin-top: 16px;
+}
+#top_btn.on {
+    opacity: 1;
+}
+#top_btn.sticky {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+}
+
+.sc-cate, 
+.sc-recom,
+.sc-rank,
+.sc-day {
+    padding: 0 4%;
+}
+
+.layer {
+    position: fixed;
+    top: 36px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.4);
+    z-index: 6;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 826ms cubic-bezier(0.4,0.9,0.3,1),visibility 526ms cubic-bezier(0.4,0.9,0.3,1);
+}
+.layer.on {
+    opacity: 1;
+    visibility: visible;
+}

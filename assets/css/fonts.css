@@ -1,0 +1,37 @@
+
+
+
+@font-face {
+  font-family: 'FuturaStd';
+  src: url('../font/FuturaStdBook.woff') format('woff');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'FuturaStd';
+  src: url('../font/FuturaStdMedium.woff') format('woff2');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'FuturaStd';
+  src: url('../font/FuturaStdLight.woff') format('woff2');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('../font/Pretendard-Medium.woff2') format('woff2');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('../font/Pretendard-Regular.woff2') format('woff2');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('../font/Pretendard-Light.woff2') format('woff2');
+  font-weight: 300;
+}
+
+
+
+
