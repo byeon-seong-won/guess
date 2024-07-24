@@ -74,6 +74,7 @@ aside {
     border-bottom: 1px solid #eee;
     transition: .3s;
     height: 56px;
+    min-width: 1440px;
 }
 #header .header-inner {
     display: flex;

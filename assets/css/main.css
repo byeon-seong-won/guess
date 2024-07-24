@@ -1290,6 +1290,12 @@ main {
 .sc-media .thumb-area {
     position: relative;
 }
+.sc-media .thumb-area video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
 .sc-media .thumb-area .ico-play {
     position: absolute;
     top: 50%;
