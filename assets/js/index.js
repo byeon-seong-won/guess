@@ -339,6 +339,25 @@ var mediaSlide = new Swiper('.sc-media .media-slide', {
 });
 
 
+document.addEventListener('DOMContentLoaded', function() {
+  var playButton = document.querySelector('.ico-play');
+  var video = document.querySelector('.video-element');
+  var thumbArea = document.querySelector('.thumb-area');
+
+  playButton.addEventListener('click', function() {
+    playButton.style.display = 'none';
+    video.style.zIndex = "10";
+    video.style.display = 'block';
+    video.play();
+  });
+
+  video.addEventListener('click', function() {
+    playButton.style.display = 'block';
+    video.pause();
+});
+  
+});
+
 
 
 

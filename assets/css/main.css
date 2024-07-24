@@ -1294,7 +1294,7 @@ main {
     position: absolute;
     left: 0;
     top: 0;
-    z-index: 0;
+    z-index: -1;
 }
 .sc-media .thumb-area .ico-play {
     position: absolute;
