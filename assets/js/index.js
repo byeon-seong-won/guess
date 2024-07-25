@@ -339,25 +339,31 @@ var mediaSlide = new Swiper('.sc-media .media-slide', {
 });
 
 
+// play 버튼 클릭시
 document.addEventListener('DOMContentLoaded', function() {
-  var playButton = document.querySelector('.ico-play');
-  var video = document.querySelector('.video-element');
-  var thumbArea = document.querySelector('.thumb-area');
+  var playButtons = document.querySelectorAll('.ico-play');
+  var videos = document.querySelectorAll('.video-element');
 
-  playButton.addEventListener('click', function() {
-    playButton.style.display = 'none';
-    video.style.zIndex = "10";
-    video.style.display = 'block';
-    video.play();
+  playButtons.forEach(function(playButton) {
+    playButton.addEventListener('click', function() {
+      var videoId = playButton.getAttribute('data-video');
+      var video = document.querySelector('.video-element[data-video="' + videoId + '"]');
+      playButton.style.display = 'none';
+      video.style.zIndex = "10";
+      video.style.display = 'block';
+      video.play();
+    });
   });
 
-  video.addEventListener('click', function() {
-    playButton.style.display = 'block';
-    video.pause();
+  videos.forEach(function(video) {
+    video.addEventListener('click', function() {
+      var videoId = video.getAttribute('data-video');
+      var playButton = document.querySelector('.ico-play[data-video="' + videoId + '"]');
+      playButton.style.display = 'block';
+      video.pause();
+    });
+  });
 });
-  
-});
-
 
 
 
@@ -386,7 +392,6 @@ var tagmenuSlide = new Swiper('.sc-issue .tagmenu-slide', {
     prevEl: ".sc-issue .tagmenu-slide .menu-navi-prev",
   },
 });
-
 tagmenuSlide.on('slideChange', function(){
   tagcontSlide.slideToLoop(this.realIndex);
 })
